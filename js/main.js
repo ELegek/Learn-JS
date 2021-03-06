@@ -230,25 +230,92 @@
 
 // console.log(i);
 
-let arr = [1, 15, 4],
-  i = arr.sort();
+// let arr = [1, 15, 4],
+//   i = arr.sort();
 
-function compareNum(a, b) {
-  return a - b;
-}
+// function compareNum(a, b) {
+//   return a - b;
+// }
 
-console.log(arr);
+// console.log(arr);
 
-let soldier = {
-  health: 400,
-  armor: 100
-}
+// let soldier = {
+//   health: 400,
+//   armor: 100
+// }
 
-let john = {
-  health: 100
-}
+// let john = {
+//   health: 100
+// }
 
-john.__proto__ = soldier;
+// john.__proto__ = soldier;
 
-console.log(john);
-console.log(john.armor);
+// console.log(john);
+// console.log(john.armor);
+
+// let box = document.getElementById('box'),
+//   btn = document.getElementsByTagName('button'),
+//   circle = document.getElementsByClassName('circle'),
+//   heart = document.querySelectorAll('.heart'),
+//   oneHeart = document.querySelector('.heart'),
+//   wrapper = document.querySelector('.wrapper');
+
+// box.style.backgroundColor = 'blue';
+// btn[1].style.borderRadius = '100%';
+
+// circle[0].style.backgroundColor = 'red';
+// circle[1].style.backgroundColor = 'yellow';
+// circle[2].style.backgroundColor = 'green';
+
+// for (let i = 0; i < heart.length; i++) {
+//   heart[i].style.backgroundColor = 'blue';
+// }
+
+// heart.forEach(function (item, i, hearts) {
+//   item.style.backgroundColor = 'blue';
+// });
+
+// let div = document.createElement('div'),
+//   text = document.createTextNode('Тут был я');
+
+// div.classList.add('black');
+
+// document.body.appendChild(div); // Вставить в конце элементов
+// wrapper.appendChild(div);
+// div.innerHTML = '<h1>Hello world!</h1>';
+// div.textContent = 'Hello world!';
+
+
+// document.body.insertBefore(div, circle[0]); // Вставить перед элементом
+// document.body.removeChild(circle[1]); // Удалить элемент
+
+// document.body.replaceChild(btn[1], circle[1]) // Заменить элементы
+
+
+
+
+// console.log(div);
+// console.log(text);
+
+
+let menu = document.querySelector('.menu'),
+  menuItem = document.querySelectorAll('.menu-item'),
+  div = document.createElement('div'),
+  title = document.querySelector('.title'),
+  adv = document.querySelector('.adv'),
+  promptforApple = document.querySelector('#prompt');
+
+menu.insertBefore(menuItem[2], menuItem[1]);
+div.classList.add('menu-item');
+div.textContent = 'Пятый пункт';
+menu.appendChild(div);
+
+document.body.style.background = 'url(../img/apple_true.jpg)';
+
+title.textContent = 'Мы продаем только подлинную технику Apple';
+
+adv.remove();
+
+let yourOpinion = prompt('Как вы относитесь к технике Apple?');
+
+promptforApple.textContent = yourOpinion;

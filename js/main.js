@@ -298,24 +298,24 @@
 // console.log(text);
 
 
-let menu = document.querySelector('.menu'),
-  menuItem = document.querySelectorAll('.menu-item'),
-  div = document.createElement('div'),
-  title = document.querySelector('.title'),
-  adv = document.querySelector('.adv'),
-  promptforApple = document.querySelector('#prompt');
+// let menu = document.querySelector('.menu'),
+//   menuItem = document.querySelectorAll('.menu-item'),
+//   div = document.createElement('div'),
+//   title = document.querySelector('.title'),
+//   adv = document.querySelector('.adv'),
+//   promptforApple = document.querySelector('#prompt');
 
-menu.insertBefore(menuItem[2], menuItem[1]);
-div.classList.add('menu-item');
-div.textContent = 'Пятый пункт';
-menu.appendChild(div);
+// menu.insertBefore(menuItem[2], menuItem[1]);
+// div.classList.add('menu-item');
+// div.textContent = 'Пятый пункт';
+// menu.appendChild(div);
 
-document.body.style.background = 'url(../img/apple_true.jpg)';
+// document.body.style.background = 'url(../img/apple_true.jpg)';
 
-title.textContent = 'Мы продаем только подлинную технику Apple';
+// title.textContent = 'Мы продаем только подлинную технику Apple';
 
-adv.remove();
+// adv.remove();
 
-let yourOpinion = prompt('Как вы относитесь к технике Apple?');
+// let yourOpinion = prompt('Как вы относитесь к технике Apple?');
 
-promptforApple.textContent = yourOpinion;
+// promptforApple.textContent = yourOpinion;
